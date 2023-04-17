@@ -1,0 +1,123 @@
+
+#chatInput:hover{
+    border-color: rgb(74, 135, 72);
+}
+
+#chatInput:hover #chatAvatarA{
+    border-color: rgb(74, 135, 72);
+}
+
+#inputTextSpace{
+    height: 250px;
+    width: 350px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+#inputTextSpace:focus {
+    outline: none;
+}
+
+#outputTextSpace{
+    height: 290px;
+    width: 350px;
+    overflow-wrap: break-word;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    margin-top: 40px;
+}
+
+#botLoading{
+    visibility: hidden;
+    position:absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#botSpeaking{
+    visibility: hidden;
+    position:absolute; 
+    top:-65px;
+    left: 61%;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+}
+      
+.disable-scrollbars {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+#chatHoverRow{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+#chatModeSelect{
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    border: 2px black solid;
+}
+
+#chatModeSelect:focus{
+    border-color: rgb(74, 135, 72);
+}
+
+#chatSendMessage{
+    height: 40px;
+    width: 25%;
+    border-radius: 10px;
+    color: black;
+    font-size: 32px;
+    background-color: rgb(74, 135, 72);
+}
+
+.chatAvatar{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:-60px ;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: #00adfe;
+    border-radius: 25px;
+    border:black 3px solid;
+}
+
+.textArea{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    color: black;
+    background-color:rgb(239, 216, 190);
+    border:black 3px solid;
+    border-radius: 10px;
+    font-size: 26px;
+    font-family: "New Century Schoolbook";
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#chatBotAnleitung{
+    width: 450px;
+    height: 350px;
+    font-size: 24px;
+    line-height: 32px;
+    overflow-y: auto;
+}

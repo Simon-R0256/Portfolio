@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="Farbspiel/farbspiel.css">
+    <link rel="stylesheet" href="geoApi/geoApi.css">
+    <link rel="stylesheet" href="ChatBot/chatbot.css">
+    <link rel="stylesheet" href="populationCharts/populationCharts.css">
+    <link rel="stylesheet" href="goPDF/goPDF.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="flexContainer">
+
+        <!-- Seitenanfang -->
+        <div id="headBox">
+            <header id="headLine">
+                <img height="130px" src="images/macbook.svg">
+                <span style="font-size: 5vw; margin:0 80px;font-weight: 600;">Willkommen<br></span>
+                <img height="130px" src="images/computer.svg">
+            </header>
+
+            <div class="flexRow" style="width:50%;max-height: 230px;">
+                <div class="flexCol" style="justify-content: center;">
+                    <span class="headTextLg">Mein Name ist Simon</span>
+                    <span class="headTextMd">schön dich kennenzulernen</span>
+                </div>
+                <img id="avatarImage" src="images/myavatar.svg">
+            </div>
+
+            <div class="flexRow" style="width:80%;margin-top: 40px;">
+                <div class="flexCol headInfoBox headTextSm">
+                    <div class="headInfoBoxOverline headTextSm">Über mich</div>
+                    Ich bin 22 Jahre alt, studiere Wirtschaftsinformatik und werde 
+                    vorraussichtlich dieses Semester meinen Bachelorabschluss erreichen.
+                    Im Laufe meines Studiums habe ich die Webentwicklung für mich
+                    entdeckt und insbesondere durch das Selbststudium viel dazugelernt.
+                </div>
+
+                <div class="flexCol headInfoBox headTextSm">
+                    <div class="headInfoBoxOverline headTextSm">Mein Portfolio</div>
+                    Diese Seite soll eine kleine Sammlung von Projekten sein, die ich innerhalb
+                    der letzten 2 Wochen entwickelt habe (ausschließlich meines Projektseminars).
+                </div>
+            </div>
+
+            <div class="flexRow" style="justify-content: center;">
+                <a class="pageAnchorLink" href="#pdfAnchor"><img src="images/laravel_black.svg"></a>
+                <a class="pageAnchorLink" href="#chartsAnchor"><img src="images/graph.svg"></a>
+                <a class="pageAnchorLink" href="#chatbotAnchor"><img src="images/chat.svg"></a>
+                <a class="pageAnchorLink" href="#farbspielAnchor"><img src="images/farbpalette.svg"></a>
+                <a class="pageAnchorLink" href="#geoAnchor"><img src="images/globe.svg"></a>
+            </div>
+        </div>
+
+        <!-- GöPDF WebApp -->
+        <div class="contentBox" style="margin-top: 80px;">
+            <div class="contentBoxHeader" style="left:0">
+                GöPDF WebApplikation
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/laravel_black.svg">
+            </div>
+
+            <div class="anchor" id="pdfAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper" style="justify-content: space-evenly;">
+                <div id="pdfAnleitung"> 
+                    Im Laufe meines Projektseminars "Entwicklung von WebApplikation" an der Universität Göttingen, habe 
+                    ich eine WebApp mit dem Thema "Entwicklung einer REST-API zur Anfrage von nutzer-generierten 
+                    Formularen im Kontext der auto&shymatisierten Dokumentenerstellung an Universitäten" geschrieben.
+                    <br><br>
+
+                    <i style="color:#feb201" class="bi-arrow-return-right"></i> 
+                    In simpleren Worten sind die <b>Hauptanforderungen</b> der Seite: 
+                    <ul class="pdfList">
+                        <li>Erstellen von Dokumenten mit dynamischen Platzhaltern in einem Editor</li>
+                        <li>Das Dokument soll, nach einem Freigabeprozess, über eine REST-API als PDF abrufbar sein</li>
+                        <li>Die Platzhalter sollen im API-Request durch die Angabe von Parametern ersetzt werden können</li>
+                    </ul>
+                    <br>
+
+                    <i style="color:#feb201" class="bi-arrow-return-right"></i> 
+                    Zusätzlich gibt es auch <b>Nebenanforderungen</b> wie:
+                    <ul class="pdfList">
+                        <li>Rechteverwaltung (Redakteur <i class="bi bi-pencil-fill"></i> | Admin <i class="bi bi-person-fill-gear"></i>)</li>
+                        <li>Nutzer-, API-, Dokumentenverwaltung, API-Logs</li>
+                        <li>Frontend: Dashboards, Universitäts Design, Responsive</li>
+                    </ul>
+                    <br>
+                    
+                    Die Seite wird auf einem Projektserver der Universität Göttingen gehostet.<br>
+                    Weitere Informationen können auf der Hilfeseite eingesehen werden.
+                    
+                    <div class="flexRow" style="margin-top: 20px;align-items: center;">
+                        <div class="pdfTechDetails">
+                            <div style="text-align: center;font-size: 32px;margin-bottom: 2px;border-bottom: 3px black solid;">
+                                <b>Technische Details <i class="bi bi-tools"></i></b>
+                            </div>
+                            <div class="detailEntry">
+                                PHP
+                                &nbsp;<i class="bi bi-arrow-right"></i>&nbsp; 
+                                Laravel 9 <img src="images/laravel.svg">
+                            </div>
+                            <div class="detailEntry">
+                                Datenbank
+                                &nbsp;<i class="bi bi-arrow-right"></i>&nbsp; 
+                                MySQL <img src="images/mysql.svg">
+                            </div>
+                            <div class="detailEntry">
+                                HTML & CSS
+                                &nbsp;<i class="bi bi-arrow-right"></i>&nbsp; 
+                                Bootstrap <img src="images/bootstrap.svg">
+                            </div>
+                            <div class="detailEntry">
+                                Javascript
+                                &nbsp;<i class="bi bi-arrow-right"></i>&nbsp; 
+                                JQuery, DataTables
+                            </div>
+                            <div class="detailEntry">
+                                Other
+                                &nbsp;<i class="bi bi-arrow-right"></i>&nbsp; 
+                                GitLab, DomPDF, Blade
+                            </div>
+                        </div>
+                        <a id="pdfLink" href="http://php.web233.projektserver5.as.wiwi.uni-goettingen.de/" target="_blank">
+                        </a>
+                        <div class="pdfTechDetails">
+                            <div style="text-align: center;font-size: 32px;margin-bottom: 2px;border-bottom: 3px black solid;">
+                                <b>Zugangsdaten <i class="bi bi-unlock-fill"></i></b>
+                            </div>
+                            <div class="pdfAccessEntry">
+                                <table class="pdfAccessTable">
+                                    <tr>
+                                        <td colspan="2">Redakteur <i class="bi bi-pencil-fill"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:60%;"><i class="bi bi-person-circle"></i> max@gmx.de</td>
+                                        <td><i class="bi bi-key-fill"></i> 123</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <div class="pdfAccessEntry">
+                                <table class="pdfAccessTable">
+                                    <tr>
+                                        <td colspan="2">Admin <i class="bi bi-person-fill-gear"></i></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:60%;"><i class="bi bi-person-circle"></i> adm@gmx.de</td>
+                                        <td><i class="bi bi-key-fill"></i> 123</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </div>
+        </div>
+
+        <!-- Population Charts -->
+        <div class="contentBox">
+            <div class="contentBoxHeader" style="left:0">
+                Bevölkerungs Visualisierungen
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/graph.svg">
+            </div>
+
+            <div class="anchor" id="chartsAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper" style="justify-content: space-evenly;">
+                <div class="flexcol" id="chartSearchArea">
+                    <div class="flexRow" style="margin:10px 0 5px 0;justify-content: center;">
+                        <button id="getChartData" onclick="getChartData()"><i class="bi bi-arrow-clockwise"></i></button>
+                        <input type="text" id="chartSearchBar" placeholder="Suche in Daten">
+                    </div>
+                    <div id="chartSearchResults">
+                        
+                    </div>
+                </div>
+
+                <div id="graphArea">
+                    <canvas id="graphCanvas"></canvas>
+                </div>
+            </div>
+            <div class="flexRow" style="margin-top: 30px;">
+                <div id="chartAnleitung">
+                    <b>Anleitung:</b><br> 
+                    Drücke auf den grünen Button um Entwicklungsdaten von der Eurostat Datenbank 
+                    <a href="https://ec.europa.eu/eurostat/en/web/main/data/database" target="_blank">
+                    <i style="color: burlywood;" class="bi bi-box-arrow-up-right"></i></a>
+                    abzurufen. Nun kannst du dir die enthaltenen Daten für ein bestimmtes europäisches Land 
+                    visualisieren lassen. Standardmäßig wird die Altersverteilung aus 2022 angezeigt. Sie kann durch
+                    ein Klick auf auf ein anderes Jahr geändert werden.
+                    
+                </div>
+                <div class="flexRow" style="justify-content: center;width: 55%;">
+                    <div id="pieAgeArea">
+                        <span id="pieHeadText">Altersverteilung in Jahren</span> <br><br>
+                        <i class="bi bi-globe-americas"></i> <span id="pieCountry">( - )</span><br> 
+                        <i class="bi bi-calendar3"></i> <span id="pieYear">( - )</span>
+
+                        <div style="margin-top: 25px;">
+                            <div class="flexRow">
+                                <div class="ageListEntry">2011</div>
+                                <div class="ageListEntry">2012</div>
+                                <div class="ageListEntry">2013</div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="ageListEntry">2014</div>
+                                <div class="ageListEntry">2015</div>
+                                <div class="ageListEntry">2016</div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="ageListEntry">2017</div>
+                                <div class="ageListEntry">2018</div>
+                                <div class="ageListEntry">2019</div>
+                            </div>
+                            <div class="flexRow">
+                                <div class="ageListEntry">2020</div>
+                                <div class="ageListEntry">2021</div>
+                                <div class="ageListEntry">2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pieArea">
+                        <canvas id="pieCanvas"></canvas>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ChatBot -->
+        <div class="contentBox">
+            <div class="contentBoxHeader" style="left:0">
+                ChatBot
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/chat.svg">
+            </div>
+
+            <div class="anchor" id="chatbotAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper" style="justify-content: space-evenly;">
+                <div id="chatBotAnleitung">
+                    <b>Anleitung:</b><br> 
+                    Der ChatBot benutzt OpenAI's "GPT-3.5 Language Model" 
+                    <a href="https://rapidapi.com/openai-api-openai-api-default/api/openai80" target="_blank">
+                    <i style="color: burlywood;" class="bi bi-box-arrow-up-right"></i></a>
+                    um eine Antwort zurückzugeben.
+                    Schreibe eine Frage in die linke Box und klicke auf das Chatsymbol.
+                    Außerdem ist es mit OpenAI's "DALL·E" möglich sich über ein bestimmtes Thema realistische Bilder erstellen zu lassen.
+                    Wähle dafür in der Selection "Draw an Image" aus.  
+                </div>
+
+                <div class="flexCol">
+                    <div class="textArea" id="chatInput"> 
+                        <div class="disable-scrollbars" id="inputTextSpace" contenteditable="true"></div>
+                        <div class="flexRow" id="chatHoverRow">
+                            <select id="chatModeSelect">
+                                <option value="text">Text Chat</option>
+                                <option value="image">Draw an Image</option>
+                            </select>
+                            <button id="chatSendMessage"><i class="bi bi-chat-left-text"></i></button>
+                        </div>
+                        <div id="chatAvatarA" class="chatAvatar"><img width="100px" height="100px" src="images/human.svg"></div>
+                    </div>
+                </div>
+                <div class="textArea" id="chatOutput"> 
+                    <div class="disable-scrollbars" id="outputTextSpace"></div>
+                    <div id="chatAvatarB" class="chatAvatar"><img style="margin-top: 10px;" width="85px" height="85px" src="images/chatrobot.svg"></div>
+                    <div id="botLoading"><img width="70px" height="70px" src="images/loading.gif"></div>
+                    <div id="botSpeaking"><img width="60px" height="60px" src="images/message.svg"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farbspiel -->
+        <div class="contentBox">
+            <div class="contentBoxHeader" style="left:0">
+                Gedächtnisspiel
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/farbpalette.svg">
+            </div>
+
+            <div class="anchor" id="farbspielAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper" style="justify-content: space-evenly;">
+                <div id="farbAnleitung">
+                    <b>Anleitung:</b><br> 
+                    Bei dem Spiel geht es darum die angezeigten Farben in richtiger 
+                    Reihenfolge wiederzugeben. Wenn die Antwort korrekt war, steigt man ein Level auf und 
+                    beim nächsten Versuch wird eine Farbe mehr angezeigt. 
+                    Bei einer falschen Eingabe steigt man ein Level ab.  
+                </div>
+
+                <div id="farbPalette">
+                    <div>
+                        <div class="colorBox" id="green" style="background-color: green;"></div>
+                        <div class="colorBox" id="blue" style="background-color: blue;"></div>
+                    </div>
+                    <div>
+                        <div class="colorBox" id="red" style="background-color: red;"></div>
+                        <div class="colorBox" id="yellow" style="background-color: yellow;"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="farbAnzeige">
+                        <div id="feedbackBox"></div>
+                        <div id="feedbackText"></div>
+                    </div>
+                </div>
+
+                <div id="farbInfo">
+                    <button id="colorGameStart">Start</button>
+                    <div class="farbInfoLabel">
+                        Level <span id="farbLvl">1</span>
+                    </div>
+
+                    <div class="farbInfoLabel">
+                        <span id="actionLabel">Drücke auf Start!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Geo API -->
+        <div class="contentBox" style="margin-bottom: 80px;">
+            <div class="contentBoxHeader" style="left:0">
+                GeoDB API
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/globe.svg">
+            </div>
+
+            <div class="anchor" id="geoAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper" style="justify-content: space-evenly;">
+                <div id="geoSearchArea">
+                    <div id="geoSearchHead">
+                        <input type="text" id="geoSearch" placeholder="Suche nach einem Land">
+                        <button id="geoSearchButton" onclick="getCountrySearch()"><i class="bi bi-search"></i></button>
+                    </div>
+                    <div id="geoSearchResults"></div>
+                </div>
+
+                <div id="geoInformationArea">
+                    <div class="flexRow">
+                        <div id="countryInfo" class="hiddenTransition">
+                            <div id="countryNameLabel"></div>
+                            <table id="countryInfoTable">
+                                <tr>
+                                    <td><img src="images/capitol.svg" width="30px" height="30px"></td>
+                                    <td id="countryCapital"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/coin.svg" width="30px" height="30px"></td>
+                                    <td id="countryCurrency"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div>
+                            <img id="countryFlag" class="hiddenTransition" width="300px" height="158px" src="">
+                        </div>
+                    </div>
+
+                    <div id="regionInfo" class="hiddenTransition">
+                        <table id="regionTable">
+                            <thead></thead>
+                                <tr>
+                                    <th>
+                                        Regions 
+                                        <button id="getRegionsButton" onclick="getRegionInformation(this)"><i class="bi bi-plus"></i></button>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="regionTableBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="informationLabel">
+                        Country Information
+                    </div>
+
+                    <div id="openGeoManual"><i class="bi bi-info-lg"></i></div>
+                </div>
+            </div>
+                
+            <div class="flexRow">
+                <div id="geoAnleitung">
+                    <b>Anleitung:</b><br>
+                    Das Programm ruft Länderinformationen von der "GeoDB Cities" API <a href="https://rapidapi.com/wirefreethought/api/geodb-cities/" target="_blank">
+                    <i style="color: burlywood;" class="bi bi-box-arrow-up-right"></i></a> ab und stellt sie strukturiert dar.
+                    Suche im linken Bereich nach einem Land und klicke es an, um Informationen zu erhalten. 
+                    Anschließend können mit einem Klick auf das Pluszeichen jeweils 10 Regionen des Landes geladen werden.
+                    Die API ist beschränkt auf eine Abfrage pro Sekunde (Ein Klick ist eine Abfrage). 
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ChartsJS -->
+    <script src=" https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js "></script>
+
+    <!-- My Javascript -->
+    <script src="Farbspiel/farbspiel.js"></script>
+    <script src="geoApi/geoApi.js"></script>
+    <script src="ChatBot/chatbot.js"></script>
+    <script src="populationCharts/populationCharts.js"></script>
+
+</body>
+</html>

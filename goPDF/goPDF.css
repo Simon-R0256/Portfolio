@@ -1,0 +1,76 @@
+#pdfAnleitung{
+    text-align: left;
+    font-size: 26px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.pdfList{
+    margin: 4px 0 4px 0;
+    padding-left: 33px;
+}
+
+.pdfList li::marker {
+    color: white;
+}
+
+.pdfTechDetails{
+    width: 450px;
+    height: 250px;
+    background-color:#ffd386;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+}
+
+.detailEntry{
+    min-height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.detailEntry img{
+    height: 35px;
+    width: 35px;
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: azure;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#pdfLink{
+    width: 180px;
+    height: 180px;
+    background-image: url(../images/browser.svg);
+    background-size: cover;
+    border: 2px black solid;
+    background-color: #ffd386;
+    border-radius: 20px;
+}
+
+#pdfLink:hover {
+    background-color:#b38b45;
+}
+
+.pdfAccessEntry{
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 8px auto 8px auto;
+}
+
+.pdfAccessTable{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
