@@ -1,4 +1,4 @@
-var chartData = {};
+const chartData = {};
 var graphChart, pieChart;
 var currentCode;
 

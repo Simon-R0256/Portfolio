@@ -47,16 +47,18 @@
                 <div class="flexCol headInfoBox headTextSm">
                     <div class="headInfoBoxOverline headTextSm">Mein Portfolio</div>
                     Diese Seite soll eine kleine Sammlung von Projekten sein, die ich innerhalb
-                    der letzten 2 Wochen entwickelt habe (ausschließlich meines Projektseminars).
+                    der letzten Monate entwickelt habe. Ich habe die Projekte absteigend nach
+                    Relevanz sortiert. 
                 </div>
             </div>
 
             <div class="flexRow" style="justify-content: center;">
                 <a class="pageAnchorLink" href="#pdfAnchor"><img src="images/laravel_black.svg"></a>
+                <a class="pageAnchorLink" href="#reactAnchor"><img src="images/react.svg"></a>
                 <a class="pageAnchorLink" href="#chartsAnchor"><img src="images/graph.svg"></a>
                 <a class="pageAnchorLink" href="#chatbotAnchor"><img src="images/chat.svg"></a>
-                <a class="pageAnchorLink" href="#farbspielAnchor"><img src="images/farbpalette.svg"></a>
                 <a class="pageAnchorLink" href="#geoAnchor"><img src="images/globe.svg"></a>
+                <a class="pageAnchorLink" href="#farbspielAnchor"><img src="images/farbpalette.svg"></a>
             </div>
         </div>
 
@@ -74,7 +76,7 @@
             <div class="contentBoxHeadMargin"></div>
 
             <div class="flexContentWrapper" style="justify-content: space-evenly;">
-                <div id="pdfAnleitung"> 
+                <div class="pdfAnleitung"> 
                     Im Laufe meines Projektseminars "Entwicklung von WebApplikation" an der Universität Göttingen, habe 
                     ich eine WebApp mit dem Thema "Entwicklung einer REST-API zur Anfrage von nutzer-generierten 
                     Formularen im Kontext der auto&shymatisierten Dokumentenerstellung an Universitäten" geschrieben.
@@ -132,7 +134,7 @@
                                 GitLab, DomPDF, Blade
                             </div>
                         </div>
-                        <a id="pdfLink" href="http://php.web233.projektserver5.as.wiwi.uni-goettingen.de/" target="_blank">
+                        <a class="pdfLink" href="http://php.web233.projektserver5.as.wiwi.uni-goettingen.de/" target="_blank">
                         </a>
                         <div class="pdfTechDetails">
                             <div style="text-align: center;font-size: 32px;margin-bottom: 2px;border-bottom: 3px black solid;">
@@ -167,6 +169,35 @@
                    
             </div>
         </div>
+
+
+        <!-- PetHotel -->
+        <div class="contentBox">
+            <div class="contentBoxHeader" style="left:0">
+                PetHotel 
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/react.svg">
+            </div>
+
+            <div class="anchor" id="reactAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper" style="justify-content: space-evenly;">
+                <div class="pdfAnleitung flexRow" style="align-items: center;margin-bottom: 20px;"> 
+                    <p style="max-width: 50%;margin: 0;max-height: 250px; overflow-y: auto;">
+                        PetHotel ist eine statische Webseite (Frontend Only), die vollständig mit dem React Framework/Library
+                        entwickelt wurde. Insbesondere war es mir wichtig, dass die Seite auch auf mobilen Geräten
+                        mit kleineren Bildschirmen funktioniert (Responsive Design). Der Kern der Seite soll einfach
+                        eine kleine Community sein, die Bilder von ihren Haustieren teilen und miteinander interagieren. 
+                    </p>
+                    
+                    <a class="pdfLink" href="https://pethotel-r0256.netlify.app/" target="_blank"></a>
+                </div>
+            </div>         
+        </div>
+    
 
         <!-- Population Charts -->
         <div class="contentBox">
@@ -291,61 +322,9 @@
             </div>
         </div>
 
-        <!-- Farbspiel -->
-        <div class="contentBox">
-            <div class="contentBoxHeader" style="left:0">
-                Gedächtnisspiel
-            </div>
-
-            <div class="contentBoxHeader" style="right:0">
-                <img height="40" src="images/farbpalette.svg">
-            </div>
-
-            <div class="anchor" id="farbspielAnchor"></div>
-            <div class="contentBoxHeadMargin"></div>
-
-            <div class="flexContentWrapper flexWrap" style="justify-content: space-evenly;">
-                <div id="farbAnleitung">
-                    <b>Anleitung:</b><br> 
-                    Bei dem Spiel geht es darum die angezeigten Farben in richtiger 
-                    Reihenfolge wiederzugeben. Wenn die Antwort korrekt war, steigt man ein Level auf und 
-                    beim nächsten Versuch wird eine Farbe mehr angezeigt. 
-                    Bei einer falschen Eingabe steigt man ein Level ab.  
-                </div>
-
-                <div id="farbPalette">
-                    <div>
-                        <div class="colorBox" id="green" style="background-color: green;"></div>
-                        <div class="colorBox" id="blue" style="background-color: blue;"></div>
-                    </div>
-                    <div>
-                        <div class="colorBox" id="red" style="background-color: red;"></div>
-                        <div class="colorBox" id="yellow" style="background-color: yellow;"></div>
-                    </div>
-                </div>
-                
-                <div>
-                    <div id="farbAnzeige">
-                        <div id="feedbackBox"></div>
-                        <div id="feedbackText"></div>
-                    </div>
-                </div>
-
-                <div id="farbInfo">
-                    <button id="colorGameStart">Start</button>
-                    <div class="farbInfoLabel">
-                        Level <span id="farbLvl">1</span>
-                    </div>
-
-                    <div class="farbInfoLabel">
-                        <span id="actionLabel">Drücke auf Start!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Geo API -->
-        <div class="contentBox" style="margin-bottom: 80px;">
+        <div class="contentBox">
             <div class="contentBoxHeader" style="left:0">
                 GeoDB API
             </div>
@@ -410,7 +389,7 @@
                     <div id="openGeoManual"><i class="bi bi-info-lg"></i></div>
                 </div>
             </div>
-                
+     
             <div class="flexRow">
                 <div id="geoAnleitung">
                     <b>Anleitung:</b><br>
@@ -419,6 +398,60 @@
                     Suche im linken Bereich nach einem Land und klicke es an, um Informationen zu erhalten. 
                     Anschließend können mit einem Klick auf das Pluszeichen jeweils 10 Regionen des Landes geladen werden.
                     Die API ist beschränkt auf eine Abfrage pro Sekunde (Ein Klick ist eine Abfrage). 
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Farbspiel -->
+        <div class="contentBox" style="margin-bottom: 80px;">
+            <div class="contentBoxHeader" style="left:0">
+                Gedächtnisspiel
+            </div>
+
+            <div class="contentBoxHeader" style="right:0">
+                <img height="40" src="images/farbpalette.svg">
+            </div>
+
+            <div class="anchor" id="farbspielAnchor"></div>
+            <div class="contentBoxHeadMargin"></div>
+
+            <div class="flexContentWrapper flexWrap" style="justify-content: space-evenly;">
+                <div id="farbAnleitung">
+                    <b>Anleitung:</b><br> 
+                    Bei dem Spiel geht es darum die angezeigten Farben in richtiger 
+                    Reihenfolge wiederzugeben. Wenn die Antwort korrekt war, steigt man ein Level auf und 
+                    beim nächsten Versuch wird eine Farbe mehr angezeigt. 
+                    Bei einer falschen Eingabe steigt man ein Level ab.  
+                </div>
+
+                <div id="farbPalette">
+                    <div>
+                        <div class="colorBox" id="green" style="background-color: green;"></div>
+                        <div class="colorBox" id="blue" style="background-color: blue;"></div>
+                    </div>
+                    <div>
+                        <div class="colorBox" id="red" style="background-color: red;"></div>
+                        <div class="colorBox" id="yellow" style="background-color: yellow;"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="farbAnzeige">
+                        <div id="feedbackBox"></div>
+                        <div id="feedbackText"></div>
+                    </div>
+                </div>
+
+                <div id="farbInfo">
+                    <button id="colorGameStart">Start</button>
+                    <div class="farbInfoLabel">
+                        Level <span id="farbLvl">1</span>
+                    </div>
+
+                    <div class="farbInfoLabel">
+                        <span id="actionLabel">Drücke auf Start!</span>
+                    </div>
                 </div>
             </div>
         </div>
