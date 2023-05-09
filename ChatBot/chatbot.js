@@ -25,7 +25,7 @@ function callChatApi(msg,mode){
         fetch('https://openai80.p.rapidapi.com/chat/completions', options)
             .then(response => response.json())
             .then(response => showBotMessage(response))
-            .catch(err => console.error(err));
+            .catch(alert("The API Provider seems to be not available"));
     }
     
     if(mode == "image"){
@@ -33,7 +33,7 @@ function callChatApi(msg,mode){
         fetch('https://openai80.p.rapidapi.com/images/generations', options)
             .then(response => response.json())
             .then(response => showBotImage(response))
-            .catch(err => console.error(err));
+            .catch(alert("The API Provider seems to be not available"));
     }
 }
 
